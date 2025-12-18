@@ -1,0 +1,202 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+}
+
+/* ===== LADO ESQUERDO ===== */
+.register-left-wrapper {
+  transform: scale(0.9);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-left {
+  width: 100%;
+  max-width: 380px;
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== LOGO ===== */
+.register-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.register-logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===== TEXTOS ===== */
+.register-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* ===== FORM ===== */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.error {
+  color: #e53935;
+  font-size: 11px;
+  line-height: 1.2;
+  margin-left: 4px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ===== PASSWORD ===== */
+
+.box-password {
+  display: flex;
+  grid-gap: 5px 8px;
+}
+
+.register-password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.register-eye-button {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.register-eye-button:hover {
+  color: #000;
+}
+
+/* ===== OPTIONS ===== */
+.register-options {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tel-dat {
+  display: flex;
+  grid-gap: 5px 8px;
+}
+/* ===== FOOTER ===== */
+.register-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link {
+  color: #3047ff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ===== LADO DIREITO ===== */
+.register-right {
+  flex: 1;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.register-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== TEXTOS DECORATIVOS ===== */
+.register-name-1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.register-name-2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* ===== LOGO CENTRAL ===== */
+.register-maestro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .register-container {
+    transform: scale(0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .register-form input {
+    font-size: 12px;
+  }
+
+  .register-left-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .register-left {
+    width: 100%;
+    max-width: 360px;
+    padding: 24px;
+  }
+
+  .register-right {
+    display: none;
+  }
+}

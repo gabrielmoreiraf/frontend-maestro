@@ -1,0 +1,87 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.notfound-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-content {
+  text-align: center;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  width: 100%;
+}
+
+.notfound-code {
+  font-size: 96px;
+  font-weight: 700;
+  color: #3047ff;
+  margin-bottom: 10px;
+}
+
+.notfound-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.notfound-text {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.notfound-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3047ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notfound-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(48, 71, 255, 0.35);
+}
+
+@media (max-width: 900px) {
+  .notfound-container {
+    transform: scale(0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .notfound-content {
+    width: 100%;
+    max-width: 360px;
+    padding: 24px;
+  }
+
+  .notfound-code {
+    font-size: 72px;
+  }
+
+  .notfound-title {
+    font-size: 20px;
+  }
+
+  .notfound-text {
+    font-size: 14px;
+  }
+
+  .notfound-button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,150 @@
+* {
+  font-family: "poppins", sans-serif;
+} /* ===== CONTAINER PRINCIPAL ===== */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+} /* ===== LADO ESQUERDO ===== */
+.left-section-0 {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* garante centro horizontal */
+}
+.left-section {
+  scale: calc(0.9);
+  width: 100%;
+  max-width: 420px; /* controle responsivo */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} /* ===== TEXTOS / FORM ===== */
+.to-enter {
+  font-size: 36px;
+}
+.form {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.links-login {
+  font-size: 16px;
+  color: #3047ff;
+  text-decoration: none;
+}
+.register {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+} /* ===== LADO DIREITO (IMAGENS – NÃO ALTERADAS) ===== */
+.right-section {
+  flex: 1;
+  position: relative;
+  height: 100vh; /* garante altura fixa */
+  overflow: hidden;
+}
+
+.right-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Name-1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.Name-2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.maestro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+.brand-name {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+} /* ===== PASSWORD ===== */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+.eye-button {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #555;
+}
+.eye-button:hover {
+  color: #000;
+} /* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .login-container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .right-section {
+    display: none;
+  }
+  .left-section {
+    padding: 30px 40px;
+  }
+  .brand-name {
+    font-size: 24px;
+    left: 20px;
+    bottom: 10px;
+  }
+}
