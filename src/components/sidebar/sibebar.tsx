@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./sidebar.css";
+import logo1 from "../../assets/Logo-1 1.png";
 
 type SubItem = {
   label: string;
@@ -40,7 +41,8 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <span className="logo">MAESTRO</span>
+        <img src={logo1} alt="Maestro" className="logo-icon" />
+        <h1>Maestro</h1>
       </div>
 
       <nav className="sidebar-nav">

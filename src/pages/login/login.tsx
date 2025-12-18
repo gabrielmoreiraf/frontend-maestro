@@ -32,7 +32,6 @@ const Login: React.FC = () => {
       console.log("Login OK:", response.data);
       alert("Login realizado com sucesso");
 
-      // 👉 navega para a próxima página após login válido
       navigate("/dashboard");
     } catch (error: any) {
       alert(error.response?.data?.detail || "Erro ao tentar fazer login");

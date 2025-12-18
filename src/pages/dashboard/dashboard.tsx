@@ -1,5 +1,4 @@
 import { Sidebar } from "../../components/sidebar/sibebar";
-import logo1 from "../../assets/Logo-1 1.png";
 import "./dashboard.css";
 import construcion from "../../assets/construcion.svg";
 
@@ -8,10 +7,7 @@ export function Dashboard() {
     <div className="dashboard-container">
       <Sidebar />
 
-      <div className="dashboard-content">
-        <img src={logo1} alt="Maestro" className="logo-icon" />
-        <h1>Maestro</h1>
-
+      <main className="dashboard-main">
         <div className="dashboard-info">
           <img
             src={construcion}
@@ -20,7 +16,7 @@ export function Dashboard() {
           />
           <p>Página em construção</p>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
