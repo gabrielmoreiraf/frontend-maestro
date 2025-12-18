@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./sidebar.css";
 import logo1 from "../../assets/Logo-1 1.png";
 
+type SidebarProps = {
+  isOpen: boolean;
+};
+
 type SubItem = {
   label: string;
 };
@@ -31,7 +35,7 @@ const menu: MenuItem[] = [
   { label: "Testes de Software", subItems: [{ label: "" }] },
 ];
 
-export function Sidebar() {
+export function Sidebar({ isOpen }: SidebarProps) {
   const [openMenu, setOpenMenu] = useState<string | null>("Requisitos");
 
   function toggleMenu(label: string) {
@@ -39,7 +43,7 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-header">
         <img src={logo1} alt="Maestro" className="logo-icon" />
         <h1>Maestro</h1>
